@@ -1,0 +1,11 @@
+<h1> Destination Index </h1>
+<br>
+<br>
+<a href="../Destinations/new">Create Post</a>
+<br>
+
+
+<% @destinations.each do |destination| %>
+  <%= link_to destination.title, destination_path(destination) %><br>
+
+<% end %>

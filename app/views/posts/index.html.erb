@@ -1,0 +1,11 @@
+<h1> Posts Index </h1>
+<br>
+<br>
+<a href="../Posts/new">Create Post</a>
+<br>
+
+
+<% @posts.each do |post| %>
+  <%= link_to post.title, post_path(post) %><br>
+
+<% end %>

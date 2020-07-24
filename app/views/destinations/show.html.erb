@@ -1,0 +1,15 @@
+<H1>Destination: <%= @destination.name %></H1>
+<H3>Country: <%= @destination.country %></H3>
+
+<br>
+<br>
+
+<div> <% @destination.posts.each do |i| %></div>
+    <h4>Title: <%= i.title %></h4>
+    Content: <%= i.content %><br><br>
+    Likes: <%= i.likes %><br>
+
+  <% end %>
+
+
+

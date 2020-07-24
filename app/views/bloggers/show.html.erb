@@ -1,0 +1,14 @@
+<H1>Blogger: <%= @blogger.name %></H1>
+
+<br>
+<br>
+
+<div> <% @blogger.posts.each do |i| %></div>
+    <h4>Title: <%= i.title %></h4>
+    Content: <%= i.content %><br><br>
+    Likes: <%= i.likes %><br>
+
+  <% end %>
+
+
+
